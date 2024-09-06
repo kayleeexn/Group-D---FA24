@@ -30,7 +30,8 @@ Victoria Rowe
 Kaylie Nguyen
 Natalie Roman
 
-### Version History: Version 1
+### Version History: 
+Version 1
 
 ### License:
 
