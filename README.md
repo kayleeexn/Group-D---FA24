@@ -23,12 +23,12 @@ The user can create their own individualized degree flowchart based on their pre
 
 
 ## Authors:
-Cristiana Eagen
-Jasmine Lim
-Jennifer Marwitz
-Victoria Rowe
-Kaylie Nguyen
-Natalie Roman
+- Cristiana Eagen
+- Jasmine Lim
+- Jennifer Marwitz
+- Victoria Rowe
+- Kaylie Nguyen
+- Natalie Roman
 
 ### Version History: 
 Version 1
