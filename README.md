@@ -5,14 +5,14 @@ This OU Enrollment website helps students generate their schedules based on thei
 
 
 ## Additional Libraries:
-\n React
-\n Node.js
+React
+Node.js
 
 ## Additional Tools:
-\n Figma
+Figma
 
 ## Getting started(installation): 
-A link to the website will be provided/How to set up a local server to host the website on your own computer.
+A link to the website will be provided or how to set up a local server to host the website on your own computer.
 
 
 ## How to use this project: 
