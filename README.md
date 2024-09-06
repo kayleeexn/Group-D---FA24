@@ -17,6 +17,12 @@ A link to the website will be provided or how to set up a local server to host t
 
 ## How to use this project: 
 The user can create their own individualized degree flowchart based on their preferences and using the features we implemented. 
+Starting Local Server:
+ - Download start_server.js and index.html files from repository.
+ - Open Command Prompt and navigate to the location of the files.
+ - Run the command: "node start_server.js"
+ - Should receive the statement: "Server running on http://localhost:8000"
+ - CTRL + Click to open link and view webpage.
 
 ## Help (common problems): 
 
