@@ -4,12 +4,14 @@
 This OU Enrollment website helps students generate their schedules based on their chosen major/minor, and add preferences like class times (morning/afternoon), professor ratings, and workload per semester (the number of credit hours). It will also implement AI to generate future schedules with filtered options.
 
 
-## Additional Libraries:
-React
+## Additional Frameworks:
+React <br/>
 Node.js
 
 ## Additional Tools:
-Figma
+Figma <br/>
+SQL
+
 
 ## Getting started(installation): 
 A link to the website will be provided or how to set up a local server to host the website on your own computer.
