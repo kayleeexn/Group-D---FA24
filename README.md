@@ -29,7 +29,6 @@ Starting Local Server:
 ## Help (common problems): 
 
 
-
 ## Authors:
 - Cristiana Eagen
 - Jasmine Lim
@@ -45,3 +44,24 @@ Version 1
 
 ### Acknowledgments: 
 (inspiration, code snippets, works cited etc)
+
+### File Organization :
+Instructions listed in 'file_organization.txt' 
+
+### `npm install`
+
+Installs all the packages from the package.json file that are necessary to run the project.
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+

@@ -1,0 +1,54 @@
+/* src/global.css */
+
+h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3em; /* Example size */
+    color: #841617; /* Your color */
+    margin: 0; /* Reset default margin */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em; /* Example size */
+    color: #841617; /* Your color */
+    margin: 0; /* Reset default margin */
+}
+
+h3 {
+    font-size: 1.5em; /* Example size */
+    color: #841617; /* Your color */
+    margin: 0; /* Reset default margin */
+}
+
+p {
+    font-size: 1.25em; /* Example size */
+    color: #841617; /* Your color */
+    padding-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-button {
+    color: white;
+    background-color: #841617;
+    padding: 40px 40px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+
+.main-button:hover {
+    background-color: #991516; 
+}
+
+
+/* Add more styles as needed */

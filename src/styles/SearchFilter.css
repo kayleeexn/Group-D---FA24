@@ -1,0 +1,42 @@
+/* src/components/SearchFilter.css */
+
+.search-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .search-box {
+    width: 80%;
+    max-width: 700px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #E5E5E5;
+  }
+
+  .search-box:focus {
+    border-color: #841617;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  .course-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .course-item h3 {
+    color: #841617;
+    margin: 0;
+  }
+  
+  .course-item p {
+    color: #666;
+  }
+  

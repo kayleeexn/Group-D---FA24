@@ -1,3 +1,0 @@
-function displayMessage() {
-    alert('Hello!');
-}
