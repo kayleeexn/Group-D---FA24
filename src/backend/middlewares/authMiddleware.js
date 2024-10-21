@@ -1,0 +1,1 @@
+/* Verifies JSON Web Tokens (JWT) to protect routes that require authentication */

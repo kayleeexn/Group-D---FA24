@@ -1,0 +1,12 @@
+.drop-section {
+  opacity: 0; /* Start hidden */
+  transform: translateY(-100px); /* Start from above */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.drop-section.visible {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to final position */
+}
+
+  

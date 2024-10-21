@@ -1,0 +1,85 @@
+/* src/components/Header.css */
+
+.header {
+    background-color: white;
+    color: #841617;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo-text {
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-icon {
+    margin-right: 0px;
+    /* Space between the icon and text */
+    font-size: 1.5em;
+    /* Adjust the icon size if needed */
+}
+
+.nav-text {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #991516;
+    border: 2px solid white;
+    padding: 10px 5px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    /* Align icon and text vertically */
+    text-decoration: none;
+    color: #841617;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: #4e0004;
+    /* Change both icon and text color on hover */
+}
+
+.nav-link:hover .nav-icon {
+    transform: scale(1.1);
+    /* Slightly enlarge the icon on hover */
+}

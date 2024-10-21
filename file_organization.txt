@@ -1,0 +1,29 @@
+Organizing Files:
+
+/* FRONT END FILES */
+/assets: For static files (logo, fonts, images) used across React components
+/components: Houses reusable components in the React app (header, footer, etc)
+/pages: Each page of the React app, built using the components
+/styles: Contains CSS files
+/utils (Front-End): Utility functions specific to front end (APIs)
+
+
+/* BACK END FILES */
+/backend (Node.js Back-End):
+/controllers: Manages logic of handling incoming requests (ex. login authentication or processing PDFs)
+/services: Perform core logic
+/models: Database schema (ex. user.js defines the User model)
+/routes: All API routes that the front-end will call
+/utils (Back-End): Helper functions for back-end logic
+
+Naming Files:
+-- Name it after your feature followed by the folder name.
+-- For example:
+	Feature: Login Authentication
+	File Names:
+		./controllers/authController.js
+		./middlewares/authMiddleware.js
+		./routes/authRoutes.js
+		./services/authService.js
+		./utils/authUtils.js
+	
