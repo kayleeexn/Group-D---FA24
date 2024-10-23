@@ -22,7 +22,7 @@ const sqlite3 = require("sqlite3").verbose();
 
 
 // set up database named courses.db
-const db = new sqlite3.Database('../databases/majors_database.db', (err) => 
+const db = new sqlite3.Database('../databases/courses.db', (err) => 
     {
     if (err)
         {
@@ -31,7 +31,7 @@ const db = new sqlite3.Database('../databases/majors_database.db', (err) =>
         }
         else
         {
-        console.log('Connected to the majors database.');
+        console.log('Connected to the courses database.');
         }
 });
 
