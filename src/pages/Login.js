@@ -81,15 +81,6 @@ const Login = () => {
           Login
         </Button>
       </form>
-      <p>Don't have an account?</p>
-      <Button
-        component={Link}
-        to="/create-account"
-        variant="contained"
-        color="secondary"
-        >
-        Create An Account
-        </Button>
     </div>
   );
 };
