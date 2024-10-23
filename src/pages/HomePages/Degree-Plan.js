@@ -1,8 +1,39 @@
-// Degree-Plan.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/Home.css';
 
-const DegreePlan = ({ degreeProgressRef }) => {
+const DegreePlan = ({ degreeProgressRef, selectedCourses }) => {
+    // State to manage the degree plan courses
+    const [degreePlan, setDegreePlan] = useState([]);
+
+    // Effect to update the degree plan based on selected courses
+    useEffect(() => {
+        if (selectedCourses && selectedCourses.length > 0) {
+            setDegreePlan(selectedCourses);
+        }
+    }, [selectedCourses]);
+
+    // Function to group courses by semester
+    const groupCoursesBySemester = (courses) => {
+        const semesters = [
+            { title: "Semester 1 - Fall 2024", courses: [] },
+            { title: "Semester 2 - Spring 2025", courses: [] },
+            { title: "Semester 3 - Fall 2025", courses: [] },
+            { title: "Semester 4 - Spring 2026", courses: [] },
+        ];
+
+        courses.forEach((course, index) => {
+            const semesterIndex = Math.floor(index / 5); // 5 courses per semester
+            if (semesterIndex < semesters.length) {
+                semesters[semesterIndex].courses.push(course);
+            }
+        });
+
+        return semesters;
+    };
+
+    // Group the degree plan courses by semester
+    const semesters = groupCoursesBySemester(degreePlan);
+
     return (
         <section ref={degreeProgressRef} id="degree-progress">
             <div className="degree-path-container">
@@ -11,49 +42,20 @@ const DegreePlan = ({ degreeProgressRef }) => {
 
                 <div className="degree-plan">
                     <div className="semester-row">
-                        <div className="semester">
-                            <h3>Semester 1 - Fall 2024</h3>
-                            <ul className="class-list">
-                                <li>Introduction to Computer Science (CS 101)</li>
-                                <li>Calculus I (MATH 181)</li>
-                                <li>English Composition (ENG 121)</li>
-                                <li>History of Western Civilization (HIST 101)</li>
-                                <li>History of Western Civilization (HIST 101)</li>
-                            </ul>
-                        </div>
-
-                        <div className="semester">
-                            <h3>Semester 2 - Spring 2025</h3>
-                            <ul className="class-list">
-                                <li>Data Structures (CS 201)</li>
-                                <li>Calculus II (MATH 182)</li>
-                                <li>Physics I (PHYS 211)</li>
-                                <li>World Literature (ENG 202)</li>
-                                <li>History of Western Civilization (HIST 101)</li>
-                            </ul>
-                        </div>
-
-                        <div className="semester">
-                            <h3>Semester 3 - Fall 2025</h3>
-                            <ul className="class-list">
-                                <li>Algorithms (CS 301)</li>
-                                <li>Discrete Mathematics (MATH 210)</li>
-                                <li>Physics II (PHYS 212)</li>
-                                <li>Public Speaking (COMM 101)</li>
-                                <li>History of Western Civilization (HIST 101)</li>
-                            </ul>
-                        </div>
-
-                        <div className="semester">
-                            <h3>Semester 4 - Spring 2026</h3>
-                            <ul className="class-list">
-                                <li>Algorithms (CS 301)</li>
-                                <li>Discrete Mathematics (MATH 210)</li>
-                                <li>Physics II (PHYS 212)</li>
-                                <li>Public Speaking (COMM 101)</li>
-                                <li>History of Western Civilization (HIST 101)</li>
-                            </ul>
-                        </div>
+                        {semesters.map((semester, index) => (
+                            <div className="semester" key={index}>
+                                <h3>{semester.title}</h3>
+                                <ul className="class-list">
+                                    {semester.courses.length > 0 ? (
+                                        semester.courses.map((course, courseIndex) => (
+                                            <li key={courseIndex}>{course}</li>
+                                        ))
+                                    ) : (
+                                        <li>No courses planned for this semester.</li>
+                                    )}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
