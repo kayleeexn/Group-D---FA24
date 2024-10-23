@@ -22,7 +22,7 @@ const sqlite3 = require("sqlite3").verbose();
 
 
 // set up database named courses.db
-const db = new sqlite3.Database('./courses.db', (err) => 
+const db = new sqlite3.Database('../databases/courses.db', (err) => 
     {
     if (err)
         {

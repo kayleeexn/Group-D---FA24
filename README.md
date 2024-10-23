@@ -48,13 +48,10 @@ Version 1
 ### File Organization :
 Instructions listed in 'file_organization.txt' 
 
-### `npm install`
+### Setup
+### 1. Install dependencies from package.json with `npm install`
+### 2. Run the command `npm start` to start the application
 
-Installs all the packages from the package.json file that are necessary to run the project.
-
-### `npm start`
-
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
