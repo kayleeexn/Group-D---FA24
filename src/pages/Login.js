@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // For navigation
+import { Link, useNavigate } from 'react-router-dom'; // For navigation
 import Button from '@mui/material/Button'; // For UI enhancement
 import TextField from '@mui/material/TextField'; // Material-UI for styled inputs
 import '../styles/Login.css'; // CSS for styling the login form
+import { validateEmail } from '../utils/validation';
 
-// Email validation function
-const validateEmail = (email) => {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(String(email).toLowerCase());
-};
+
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -48,6 +45,7 @@ const Login = () => {
         // Store authentication token (session management)
         localStorage.setItem('token', data.token);
         // Navigate to a different page (e.g., Dashboard)
+        console.log('Navigating to dashboard'); // debugging
         navigate('/dashboard');
       } else {
         setError(data.message || 'Login failed');
@@ -83,6 +81,15 @@ const Login = () => {
           Login
         </Button>
       </form>
+      <p>Don't have an account?</p>
+      <Button
+        component={Link}
+        to="/create-account"
+        variant="contained"
+        color="secondary"
+        >
+        Create An Account
+        </Button>
     </div>
   );
 };

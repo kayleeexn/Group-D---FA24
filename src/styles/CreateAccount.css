@@ -1,0 +1,16 @@
+.create-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height ensures the form is vertically centered */
+}
+
+.error-message {
+    color: red; /* Keeps error messages in red, making them stand out */
+}
+
+.create-account-form {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the form to 400px for better aesthetics */
+}

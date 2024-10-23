@@ -13,6 +13,8 @@ import Contact from './pages/Contact'
 import NoPage from './pages/NoPage';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import CreateAccount from './pages/CreateAccount'; 
+
 
 import './styles/App.css';
 import './styles/global.css';
@@ -30,6 +32,7 @@ function App() {
           <Route path="/" element={ <Home /> } />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/create-account" element={<CreateAccount />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/dashboard" element={ <Dashboard />} />
