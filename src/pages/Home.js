@@ -60,9 +60,9 @@ function Home() {
             </main>
 
             {/* Sections */}
-            <section ref={automatedSchedulingRef} id="automated-scheduling">
-                <div className="plan-schedule-container">
-                    <PlanSchedule />
+            <section ref={exploreMajorsRef} id="explore-majors">
+                <div className="explore-majors-container">
+                    <ExploreMajors />
                 </div>
             </section>
 
@@ -72,9 +72,10 @@ function Home() {
                 </div>
             </section>
 
-            <section ref={exploreMajorsRef} id="explore-majors">
-                <div className="explore-majors-container">
-                    <ExploreMajors />
+
+            <section ref={automatedSchedulingRef} id="automated-scheduling">
+                <div className="plan-schedule-container">
+                    <PlanSchedule />
                 </div>
             </section>
 
