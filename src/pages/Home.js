@@ -55,7 +55,7 @@ function Home() {
                 <div className="account-buttons">
                     <h2>Get Started Below:</h2>
                     <button onClick={() => navigate('/login')}>Login</button>
-                    <button>Create An Account</button>
+                    <button onClick={() => navigate('/create-account')}>Create An Account</button>
                 </div>
             </main>
 
