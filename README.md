@@ -48,7 +48,8 @@ Version 1
 ### File Organization :
 Instructions listed in 'file_organization.txt' 
 
-### `npm install`
+### Setup
+### 1. Install dependencies with `npm install`
 
 Installs all the packages from the package.json file that are necessary to run the project.
 
