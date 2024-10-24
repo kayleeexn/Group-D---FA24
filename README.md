@@ -27,6 +27,12 @@ Starting Local Server:
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+
+## How to test:
+Go to file directory src/utils. There is a js file for the function, and a separate js test file to run that function. Here is an example:
+- `npm test -- .\src\utils\validation.test.js` Tests the specific unit test, validation.test.js for the function validation.js
+- Opens a menu in the terminal where you can browse and configure tests.
+
 ## Help (common problems): 
 
 
